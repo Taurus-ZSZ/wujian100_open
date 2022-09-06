@@ -88,3 +88,14 @@ all : ${FILE}.pat ${FILE}.hex ${FILE}.elf ${FILE}.obj
 clean:
 	rm -rf *.o *.pat *.elf *.obj *.hex
 
+ver :
+	source ../tools/setup.csh && verdi 	\
+	-ssv 	\
+	-ssy	\
+	-ssz	\
+	-ssf *.fsdb	\
+	-sverilog	\
+	-nologo		\
+	-f ../tb/tb_file.list	\
+	-top wujian100_open_tb
+

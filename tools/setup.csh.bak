@@ -17,15 +17,15 @@
 #setenv SNPSLMD_LICENSE_FILE 
 
 #set iverilog path
-#set iverilog_path=(/usr/bin)
-#set gtkwave_path=(/usr/bin)
-#set path=($iverilog_path $path)
-#set path=($gtkwave_path $path)
+set iverilog_path=(/usr/bin)
+set gtkwave_path=(/usr/bin)
+set path=($iverilog_path $path)
+set path=($gtkwave_path $path)
 
 
 #set tools path
-export TOOL_PATH=../../riscv_toolchain
+setenv TOOL_PATH ../../riscv_toolchain
 
 
-export wujian100_open_PATH=`pwd | perl -pe "s/wujian100_open.*/wujian100_open\//"`
+setenv wujian100_open_PATH `pwd | perl -pe "s/wujian100_open.*/wujian100_open\//"`
 

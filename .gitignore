@@ -1,0 +1,10 @@
+
+/sim_run/*
+!/sim_run/makefile
+
+/fpga/sim_run/*
+!/fpga/sim_run/makefile
+!/fpga/sim_run/fpga_file.list
+
+/fpga/vivado_prj/*
+!fpga/vivado_prj/wujian100_fpga/wujian100_fpga.xpr
