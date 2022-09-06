@@ -7,4 +7,6 @@
 !/fpga/sim_run/fpga_file.list
 
 /fpga/vivado_prj/*
+!fpga/vivado_prj/wujian100_fpga/
+fpga/vivado_prj/wujian100_fpga/*
 !fpga/vivado_prj/wujian100_fpga/wujian100_fpga.xpr
